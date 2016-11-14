@@ -1,0 +1,109 @@
+=== Testing insert ===
+
+Calling insert with list: empty list
+Inserting 10 at index 0.
+Expected list:  10
+Actual list:    10
+
+Calling insert with list: 10
+Inserting 20 value at index 0.
+Expected list:  20 -> 10
+Actual list:    20 -> 10
+
+Calling insert with list: 20 -> 10
+Inserting 30 at index 1.
+Expected list:  20 -> 30 -> 10
+Actual list:    20 -> 30 -> 10
+
+Calling insert with list: 20 -> 30 -> 10
+Inserting 40 at index 3.
+Expected list:  20 -> 30 -> 10 -> 40
+Actual list:    20 -> 30 -> 10 -> 40
+
+=== Testing delete ===
+
+Building linked list 10
+
+Calling delete with list: 10
+Deleting element at index 0.
+Expected list:  empty list
+Actual list:    empty list
+
+Building linked list 10 -> 20 -> 30 -> 40 -> 50
+
+Calling delete with list: 10 -> 20 -> 30 -> 40 -> 50
+Deleting element at index 0.
+Expected list:  20 -> 30 -> 40 -> 50
+Actual list:    20 -> 30 -> 40 -> 50
+
+Calling delete with list: 20 -> 30 -> 40 -> 50
+Deleting element at index 2.
+Expected list:  20 -> 30 -> 50
+Actual list:    20 -> 30 -> 50
+
+Calling delete with list: 20 -> 30 -> 50
+Deleting element at index 2.
+Expected list:  20 -> 30
+Actual list:    20 -> 30
+
+Calling delete with list: 20 -> 30
+Deleting element at index 0.
+Expected list:  30
+Actual list:    30
+
+=== Testing delete_target ===
+
+Calling delete_target with list: empty list
+Deleting 5 from list.
+Expected list:  empty_list
+Actual list:    empty list
+Expected value returned via parameter remove: false
+Actual value returned via parameter remove: false
+
+Building linked list 10
+
+Calling delete_target with list: 10
+Deleting 5 from list.
+Expected list:  10
+Actual list:    10
+Expected value returned via parameter remove: false
+Actual value returned via parameter remove: false
+
+Calling delete_target with list: 10
+Deleting 10 from list.
+Expected list:  empty list
+Actual list:    empty list
+Expected value returned via parameter remove: true
+Actual value returned via parameter remove: true
+
+Building linked list 10 -> 20 -> 30 -> 40 -> 50
+
+Calling delete_target with list: 10 -> 20 -> 30 -> 40 -> 5
+Deleting 5 from list.
+Expected list:  10 -> 20 -> 30 -> 40 -> 50
+Actual list:    10 -> 20 -> 30 -> 40 -> 50
+Expected value returned via parameter remove: false
+Actual value returned via parameter remove: false
+
+Calling delete_target with list: 10 -> 20 -> 30 -> 40 -> 5
+Deleting 10 from list.
+Expected list:  20 -> 30 -> 40 -> 50
+Actual list:    20 -> 30 -> 40 -> 50
+Expected value returned via parameter remove: true
+Actual value returned via parameter remove: true
+
+Calling delete_target with list: 20 -> 30 -> 40 -> 50
+Deleting 40 from list.
+Expected list:  20 -> 30 -> 50
+Actual list:    20 -> 30 -> 50
+Expected value returned via parameter remove: true
+Actual value returned via parameter remove: true
+
+Calling delete_target with list: 20 -> 30 -> 50
+Deleting 50 from list.
+Expected list:  20 -> 30
+Actual list:    20 -> 30
+Expected value returned via parameter remove: true
+Actual value returned via parameter remove: true
+
+Press any key to continue...
