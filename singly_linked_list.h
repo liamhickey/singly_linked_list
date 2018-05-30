@@ -24,7 +24,7 @@
 
 /* A node in a singly-linked list that stores values of type int. */
 struct intnode {
-    int    value;
+    int value;
     struct intnode *next;
 };
 
