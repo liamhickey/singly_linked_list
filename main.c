@@ -1,3 +1,11 @@
+/*
+ * This test module and the code herein were provided by Prof. Donald
+ * Bailey, Carleton University 2014. It was received without any
+ * additional copywright indications. It is included here without any
+ * modification, and should be treated as a related but individually
+ * licensed work.
+ */
+
 /* Test Singly-Linked-List of IntNodes */
 
 /* A bit of code to exercise the functions added to singly_linked_list.c 
@@ -36,7 +44,6 @@ int main(void)
     printf("Actual list:\t");
     print_linked_list(list1);
 	printf("\n\n");
-
 	printf("Calling insert with list: ");
     print_linked_list(list1);
     printf("\nInserting 20 value at index 0.\n");
